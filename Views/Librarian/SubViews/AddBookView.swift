@@ -318,7 +318,7 @@ struct AddBookView: View {
 
     
     func fetchBookDetails() {
-        let apiUrl = "https://www.googleapis.com/books/v1/volumes?q=isbn:\(isbnInput)&key=AIzaSyAkvAlA2jFYGNvyoC_JlErQhpy4L6PVmXY"
+        let apiUrl = "https://www.googleapis.com/books/v1/volumes?q=isbn:\(isbnInput)&key="
         
         guard let url = URL(string: apiUrl) else {
             print("Invalid API URL")
